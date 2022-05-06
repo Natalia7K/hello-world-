@@ -1,9 +1,76 @@
 <!doctype html> 
-<html>  
- <head>   
-  <title>Hello World</title>   
+<html lang="en">  
+ <head> 
+     <meta charset="UTF-8">  
+     <meta name="viewport" content="width=device-width, intial-scale=1.0">
+
+  <title>Hello World</title> 
+  <script src="https://kit.fontawesome.com/ddd53d8b8e.js" crossorigin="anonymous"></script>  
  </head> 
  <body>     
-  <h1>Hello World</h1> 
+  <header class="header">
+      <nav class="header__contacts">
+       <a href="tel.:12345678900">1-234-567-8900</a>
+       <div>
+           <a href="http://twitter.com">
+               <i class="fa-brands fa-twitter"></i></a>
+           <a href="http://facebook.com">
+               <i class="fa-brands fa-facebook"></i></a>
+            <a href="http://instagram.com">
+                <i class="fa-brands fa-instagram"></i></a>
+        
+
+       </div>   
+      </nav>
+      <nav class="header__top-navigation">
+          <img class="header_top-navigation-logo" width="75" src="img/yacht1.svg" alt="Yacht logo">
+          <div class="header_top-navigation-links">
+           <a class="link" href="destinations.html">Destinations</a>
+           <a class="link" href="services.html">Services</a>
+           <a class="link" href="our-fleet.html">Our fleet</a>
+           <a class="link" href="gallery.html">Gallery</a>
+           <a class="link" href="faq.html">Faq</a>
+           <a class="link" href="about-us.html">About us</a>
+           <a class="link" href="contacts.html">Contacts</a>
+           <a class="link button" href="contacts.html">Send request</a>
+          </div>
+      </nav>
+
+      <div class="header__banner">
+          <h1 class="header_banner-h1">YachtSail Trips</h1>
+          <p class="subheader">Join us on maritime vacation in the most</p>
+          <a href="#contacts" class="header_banner-link button">Let's Sail!</a>
+      </div>
+  </header>
+  <main>
+      <section class="sea">
+          <h2 class="sea__h2">Sea the world</h2>
+          <p class="sea_subheader">
+              Join our yacht trips to the most
+          </p>
+          <div class="sea__locations">
+              <article class="location">
+                  <img width="150" class="location_image" src="img/sea.jpeg" alt="Sea">
+                  <h3 class="location__h3">Affable Croatian Isles</h3>
+                  <dir class="location_month">JUN | JUL | AUG | SEP</dir>
+              </article>
+          </div>
+      </section>
+
+  </main>
+
+  <footer class="footer">
+     <div class="footer__contacts">
+         <h2 class="footer__contacts-h2">Contacts</h2>
+         <form action="YOUR_ENDPOINT_HERE" method="post">
+             <input name="name" type="text"placeholder="Name*" required>
+             <input name="phone" type="tel"placeholder="Phone number*" required>
+             <input name="email" type="email"placeholder="Email*" required>
+             <input type="submit" value="Send a request">
+         </form>
+
+     </div>
+
+  </footer>
  </body>
 </html>
